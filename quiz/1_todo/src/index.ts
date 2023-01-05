@@ -5,7 +5,8 @@ interface Todo  {
 }
 
 let todoItems:Todo[];
-
+let a : Array<number>;
+let b : number[];
 
 // api
 function fetchTodoItems():Todo[] {

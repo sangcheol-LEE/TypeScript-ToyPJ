@@ -1,4 +1,3 @@
-import { object } from "prop-types"
 
 interface User {
    age: number;
@@ -48,7 +47,7 @@ interface StringRegexDictionary {
    [key: string] : RegExp;
 }
 
-let obj:StringRegexDictionary = {
+let objf:StringRegexDictionary = {
    // sth : /abc/,
     cssFile: /\.css$/,
     jsFile:/\.js$/,

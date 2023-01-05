@@ -25,3 +25,5 @@ person.age = 101;
 
 // 진위값
 let isLogin: boolean = false;
+
+// 나는 이상철입니다.

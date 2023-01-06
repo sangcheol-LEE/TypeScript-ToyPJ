@@ -24,3 +24,6 @@ function askQ(answer: Answer) {
 }
 
 askQ(Answer.Yes)
+
+// enum 에서 제공되는 값만 사용 가능합니다.
+// 엄청 방어적으로 짤 때 사용하는거 같다 드롭다운 같은 기능에

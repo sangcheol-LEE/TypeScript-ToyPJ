@@ -36,6 +36,8 @@ subb = function(a:number, b:number):number {
 }
 
 
+
+
 // 인덱싱 방식을 정의하는 인터페이스
 interface StringArray {
    [index: number] : string

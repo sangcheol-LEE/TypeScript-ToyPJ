@@ -1,3 +1,9 @@
+interface Dropdown<T> {
+  value : T;
+  selected : boolean;
+}
+
+
 interface Email<T> {
   value : T
   selected : boolean
@@ -38,3 +44,5 @@ numberOfProducts.forEach((product) => {
 
 // 언제든지 value의 값이 변동될 수 있다는 가정..
 // 어떤 타입이 오더라도 나는 좀 유연하게 제네릭을 통해 대응하겠다.
+
+// 제러릭의 장점 타입 코드를 줄일 수 있다는 점.

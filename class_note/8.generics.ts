@@ -78,9 +78,47 @@ interface DropDown {
    str: Q
  }
 
- const obj:Samples<number,string> = {num : 10,str : "strong"}
+//  const obj:Samples<number,string> = {num : 10,str : "strong"}
 
+// 제너릭의 타입 제한
+// 제너릭을 좀 더 엄격하게 쓸 때
+// function logTextLength<T> (text: T[]): T[] {
+//    console.log(text.length)
+//    text.forEach(text => {
+//       console.log(text)
+//    })
+//    return text
+// }
 
+// logTextLength<string>(["hello", "World"])
 
+// 제너릭의 타입 제한2 - 정의된 타입 이용하기.
+// interface LengthType {
+//    length: number
+// }
+
+// function logTextLength<T extends LengthType>(text: T) :T {
+//    text.length
+//    return text
+// }
+// logTextLength("a")
+// logTextLength(10)
+// logTextLength({length : 10})
+// logTextLength({lenth : 10})
+
+// 제너릭의 타입 제한 3 - keyof
+
+interface ShoppingItem {
+   name : string;
+   price : number;
+   stock: number;
+}
+
+function getShoppingItemOption<T extends keyof ShoppingItem > (itemOption : T):T{
+   return itemOption
+}
+
+// getShoppingItemOption<string>("a")
+getShoppingItemOption("name")
 
 

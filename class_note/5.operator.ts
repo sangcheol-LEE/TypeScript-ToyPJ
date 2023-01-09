@@ -8,8 +8,6 @@ logMessage(123)
 // 유니언 타입의 장점 및 특징
 /*
     타입 가드에 용이하다.
-
-
 */
 
 interface Dev {
